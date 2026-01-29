@@ -8,7 +8,6 @@ function App() {
     navigator.clipboard.writeText(text).then(() => {
       showToast();
 
-      // Visual feedback
       if (buttonRef) {
         const originalContent = buttonRef.innerHTML;
 
@@ -81,9 +80,8 @@ function App() {
 
           {/* Bank Details Card */}
           <div className="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100">
-            {/* Card Header - Navy gradient */}
+            {/* Card Header */}
             <div className="bg-gradient-to-r from-[#001F4D] via-[#002D6B] to-[#001F4D] px-6 py-5 md:px-8 md:py-6 relative overflow-hidden">
-              {/* Gold accent stripe */}
               <div className="absolute right-0 top-0 h-full w-24 bg-gradient-to-l from-[#D4A574]/20 to-transparent transform skew-x-[-12deg]"></div>
               <div className="absolute left-0 bottom-0 h-1 w-full bg-gradient-to-r from-[#D4A574] via-[#D4A574]/50 to-transparent"></div>
 
@@ -100,57 +98,56 @@ function App() {
 
             {/* Card Body */}
             <div className="px-6 py-8 sm:p-10 space-y-8">
-              {/* Account Name */}
+              {/* Account Holder Name */}
               <div className="group">
                 <label className="block text-xs md:text-sm font-bold text-[#001F4D]/60 mb-3 uppercase tracking-wider">
-                  Account Name
+                  Account Holder Name
                 </label>
                 <div className="flex items-center gap-4">
-                  <div className="flex-grow bg-[#F5F7FA] p-4 md:p-5 rounded-xl border border-gray-200 font-mono text-[#001F4D] font-bold text-base md:text-lg">
-                    800 DOCS L.L.C S.O.C
+                  <div className="flex-grow bg-[#F5F7FA] p-4 md:p-5 rounded-xl border border-gray-200 font-mono text-[#001F4D] font-bold text-sm md:text-base">
+                    ESTERA CORPORATE SERVICE PROVIDER L.L.C
                   </div>
                   <button
-                    onClick={(e) => copyToClipboard('800 DOCS L.L.C S.O.C', e.currentTarget)}
+                    onClick={(e) => copyToClipboard('ESTERA CORPORATE SERVICE PROVIDER L.L.C', e.currentTarget)}
                     className="text-[#001F4D]/40 hover:text-[#D4A574] transition-colors p-3 rounded-lg hover:bg-[#D4A574]/10"
-                    title="Copy Account Name"
+                    title="Copy Account Holder Name"
                   >
                     <i className="far fa-copy text-xl"></i>
                   </button>
                 </div>
               </div>
 
-              {/* Bank Name & Branch Grid */}
+              {/* Account Name & Currency Grid */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8">
                 <div>
-                  <div className="flex items-center gap-4 mb-3">
-                    <label className="block text-xs md:text-sm font-bold text-[#001F4D]/60 uppercase tracking-wider">
-                      Bank Name
-                    </label>
-                    <div className="flex items-center gap-1.5 bg-[#001F4D]/5 px-2 py-1 rounded">
-                      <div className="bg-[#1E4620] text-white text-[7px] px-1.5 py-0.5 rounded font-bold">
-                        EI
-                      </div>
-                      <div className="text-[7px] leading-tight text-[#2C3E50]/60">
-                        <div>الإمارات الإسلامي</div>
-                        <div>EMIRATES ISLAMIC</div>
-                      </div>
+                  <label className="block text-xs md:text-sm font-bold text-[#001F4D]/60 mb-3 uppercase tracking-wider">
+                    Account Name
+                  </label>
+                  <div className="flex items-center gap-4">
+                    <div className="flex-grow bg-[#F5F7FA] p-4 md:p-5 rounded-xl border border-gray-200 font-mono text-[#001F4D] font-bold text-sm md:text-base">
+                      ESTERA CORPORATE SERVICE PROVIDER L.L.C
                     </div>
-                  </div>
-                  <div className="bg-[#F5F7FA] p-4 md:p-5 rounded-xl border border-gray-200 text-[#001F4D] font-bold text-base">
-                    Emirates Islamic Bank
+                    <button
+                      onClick={(e) => copyToClipboard('ESTERA CORPORATE SERVICE PROVIDER L.L.C', e.currentTarget)}
+                      className="text-[#001F4D]/40 hover:text-[#D4A574] transition-colors p-3 rounded-lg hover:bg-[#D4A574]/10"
+                      title="Copy Account Name"
+                    >
+                      <i className="far fa-copy text-xl"></i>
+                    </button>
                   </div>
                 </div>
                 <div>
                   <label className="block text-xs md:text-sm font-bold text-[#001F4D]/60 mb-3 uppercase tracking-wider">
-                    Branch Name
+                    Account Currency
                   </label>
-                  <div className="bg-[#F5F7FA] p-4 md:p-5 rounded-xl border border-gray-200 text-[#001F4D] font-bold text-base mt-0 sm:mt-4">
-                    SHIEK ZAYED ROAD
+                  <div className="bg-[#F5F7FA] p-4 md:p-5 rounded-xl border border-gray-200 text-[#001F4D] font-bold text-base flex items-center gap-3">
+                    <i className="fas fa-coins text-[#D4A574]"></i>
+                    AED
                   </div>
                 </div>
               </div>
 
-              {/* IBAN Section (Highlighted with Gold) */}
+              {/* IBAN Section */}
               <div className="bg-gradient-to-br from-[#001F4D]/5 to-[#D4A574]/10 rounded-xl p-6 md:p-8 border border-[#D4A574]/30 shadow-sm">
                 <label className="block text-xs md:text-sm font-bold text-[#D4A574] mb-4 uppercase tracking-wider flex items-center gap-2">
                   <i className="fas fa-key text-sm"></i>
@@ -158,10 +155,10 @@ function App() {
                 </label>
                 <div className="flex flex-col sm:flex-row items-center gap-4 md:gap-6">
                   <div className="flex-grow font-mono text-lg md:text-2xl text-[#001F4D] font-bold tracking-wider">
-                    AE14 0340 0037 0850 7945 801
+                    AE41 0860 0000 0997 1597 101
                   </div>
                   <button
-                    onClick={(e) => copyToClipboard('AE140340003708507945801', e.currentTarget)}
+                    onClick={(e) => copyToClipboard('AE410860000009971597101', e.currentTarget)}
                     className="gold-btn-hover w-full sm:w-auto bg-[#D4A574] hover:bg-[#C49664] text-white px-8 py-3 rounded-lg text-sm font-bold transition-all shadow-lg flex items-center justify-center gap-2"
                   >
                     <i className="far fa-copy"></i>
@@ -170,20 +167,20 @@ function App() {
                 </div>
               </div>
 
-              {/* Swift & Account Number Grid */}
+              {/* BIC/SWIFT & Account Number Grid */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8">
                 <div>
                   <label className="block text-xs md:text-sm font-bold text-[#001F4D]/60 mb-3 uppercase tracking-wider">
-                    SWIFT Code
+                    BIC / SWIFT Code
                   </label>
                   <div className="flex items-center gap-4">
                     <div className="flex-grow bg-[#F5F7FA] p-4 md:p-5 rounded-xl border border-gray-200 font-mono text-[#001F4D] font-bold text-base">
-                      MEBLAEAD
+                      WIOBAEADXXX
                     </div>
                     <button
-                      onClick={(e) => copyToClipboard('MEBLAEAD', e.currentTarget)}
+                      onClick={(e) => copyToClipboard('WIOBAEADXXX', e.currentTarget)}
                       className="text-[#001F4D]/40 hover:text-[#D4A574] transition-colors p-3 rounded-lg hover:bg-[#D4A574]/10"
-                      title="Copy Swift Code"
+                      title="Copy BIC/SWIFT Code"
                     >
                       <i className="far fa-copy text-xl"></i>
                     </button>
@@ -195,10 +192,10 @@ function App() {
                   </label>
                   <div className="flex items-center gap-4">
                     <div className="flex-grow bg-[#F5F7FA] p-4 md:p-5 rounded-xl border border-gray-200 font-mono text-[#001F4D] font-bold text-base">
-                      3708507945801
+                      9971597101
                     </div>
                     <button
-                      onClick={(e) => copyToClipboard('3708507945801', e.currentTarget)}
+                      onClick={(e) => copyToClipboard('9971597101', e.currentTarget)}
                       className="text-[#001F4D]/40 hover:text-[#D4A574] transition-colors p-3 rounded-lg hover:bg-[#D4A574]/10"
                       title="Copy Account Number"
                     >
@@ -208,27 +205,27 @@ function App() {
                 </div>
               </div>
 
-              {/* Address */}
-              <div className="border-t border-gray-100 pt-8 mt-4">
-                <label className="block text-xs md:text-sm font-bold text-[#001F4D]/50 mb-3 uppercase tracking-wider">
-                  Registered Address
+              {/* Routing Code */}
+              <div>
+                <label className="block text-xs md:text-sm font-bold text-[#001F4D]/60 mb-3 uppercase tracking-wider">
+                  Routing Code
                 </label>
-                <a
-                  href="https://maps.app.goo.gl/oK6sEsqy93w78uti9"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm md:text-base text-[#2C3E50]/80 leading-relaxed font-medium hover:text-[#0D5A6F] transition-colors inline-flex items-start gap-2"
-                >
-                  <i className="fas fa-map-marker-alt text-[#D4A574] mt-1"></i>
-                  <span>
-                    709, Business Village Block B, Port Saeed,<br />
-                    Dubai, United Arab Emirates (624692)
-                  </span>
-                </a>
+                <div className="flex items-center gap-4">
+                  <div className="flex-grow bg-[#F5F7FA] p-4 md:p-5 rounded-xl border border-gray-200 font-mono text-[#001F4D] font-bold text-base">
+                    808610001
+                  </div>
+                  <button
+                    onClick={(e) => copyToClipboard('808610001', e.currentTarget)}
+                    className="text-[#001F4D]/40 hover:text-[#D4A574] transition-colors p-3 rounded-lg hover:bg-[#D4A574]/10"
+                    title="Copy Routing Code"
+                  >
+                    <i className="far fa-copy text-xl"></i>
+                  </button>
+                </div>
               </div>
             </div>
 
-            {/* Card Footer / Help Text */}
+            {/* Card Footer */}
             <div className="bg-[#001F4D]/5 px-6 py-4 md:px-8 md:py-5 border-t border-gray-100">
               <div className="flex items-center justify-center md:justify-start gap-3">
                 <i className="fas fa-info-circle text-[#0D5A6F]"></i>
@@ -270,9 +267,9 @@ function App() {
                 <i className="fas fa-map-marker-alt text-[#D4A574]"></i>
                 Port Saeed, Dubai, UAE
               </a>
-              <a href="tel:800-3627" className="flex items-center gap-3 text-white/70 hover:text-[#D4A574] transition-colors">
+              <a href="tel:+97143304433" className="flex items-center gap-3 text-white/70 hover:text-[#D4A574] transition-colors">
                 <i className="fas fa-phone text-[#D4A574]"></i>
-                +971 4 XXX XXXX
+                +971 4 330 4433
               </a>
               <a href="mailto:info@esteradubai.com" className="flex items-center gap-3 text-white/70 hover:text-[#D4A574] transition-colors">
                 <i className="fas fa-envelope text-[#D4A574]"></i>
@@ -282,7 +279,7 @@ function App() {
           </div>
           <div className="border-t border-white/10 mt-10 pt-8 text-center">
             <p className="text-white/50 text-sm">
-              © 2026 Estera Services. All rights reserved.
+              © 2026 Estera Dubai. All rights reserved.
             </p>
           </div>
         </div>
