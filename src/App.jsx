@@ -223,6 +223,27 @@ function App() {
                   </button>
                 </div>
               </div>
+
+              {/* Office Address */}
+              <div className="border-t border-gray-100 pt-8 mt-4">
+                <label className="block text-xs md:text-sm font-bold text-[#001F4D]/60 mb-3 uppercase tracking-wider">
+                  Office Address
+                </label>
+                <a
+                  href="https://maps.app.goo.gl/DWthogGh8V2jgWXX6?g_st=ic"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm md:text-base text-[#2C3E50]/80 leading-relaxed font-medium hover:text-[#0D5A6F] transition-colors inline-flex items-start gap-3 group"
+                >
+                  <i className="fas fa-map-marker-alt text-[#D4A574] mt-1 group-hover:scale-110 transition-transform"></i>
+                  <span>
+                    <strong className="text-[#001F4D]">ESTERA CORPORATE SERVICE PROVIDER L.L.C</strong><br />
+                    210A, Al Rostamani Building<br />
+                    (Al Qayada Building) - Al Ittihad Rd<br />
+                    Dubai Int'l Airport - E11 - Dubai UAE
+                  </span>
+                </a>
+              </div>
             </div>
 
             {/* Card Footer */}
