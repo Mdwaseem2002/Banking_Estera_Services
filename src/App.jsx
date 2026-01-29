@@ -48,7 +48,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-8 py-5 flex items-center justify-between">
           <a href="/" className="text-2xl font-bold font-['Playfair_Display',serif]">
             <span className="text-[#001F4D]">Estera</span>
-            <span className="text-[#D4A574]">Services</span>
+            <span className="text-[#D4A574]">Dubai</span>
           </a>
           <div className="flex items-center gap-8">
             <button className="nav-link-hover text-[#001F4D] hover:text-[#0D5A6F] font-medium flex items-center gap-2 transition-colors">
@@ -248,7 +248,7 @@ function App() {
             <div className="flex flex-col items-center md:items-start gap-6">
               <a href="/" className="text-2xl font-bold font-['Playfair_Display',serif]">
                 <span className="text-white">Estera</span>
-                <span className="text-[#D4A574]">Services</span>
+                <span className="text-[#D4A574]">Dubai</span>
               </a>
               <div className="flex gap-4">
                 <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white/70 hover:bg-[#D4A574] hover:text-white transition-all">
